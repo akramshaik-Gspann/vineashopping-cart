@@ -71,21 +71,21 @@ function OrderSuccessfull(props) {
                                 {cartItems.length === 0 ? <h2 className='emptybasket'>Basket is empty <i className='tear-icon fas fa-sad-tear'></i></h2> :
                                     <>{cartItems?.map((item) => (
                                         <>
-                                                        <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
-                                                            <div className='items-inorder'>
-                                                                <img src={item.image} />
-                                                                <div>
-                                                                    <h6>{item.title}</h6>
-                                                                    <p>Size: Medium</p>
-                                                                    <p>Color: Storm</p>
-                                                                    <p>Quantity: {item.qty}</p>
-                                                                    <p>Price: ${item.price}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        {/* <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12"></div>
+                                            <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
+                                                <div className='items-inorder'>
+                                                    <img src={item.image} />
+                                                    <div>
+                                                        <h6>{item.title}</h6>
+                                                        <p>Size: Medium</p>
+                                                        <p>Color: Storm</p>
+                                                        <p>Quantity: {item.qty}</p>
+                                                        <p>Price: ${item.price}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12"></div>
                                                         <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12"></div> */}
-                                                    </>
+                                        </>
                                     ))}</>
 
                                 }

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux';
 import { setCartData } from './redux/actions/productsActions'
-
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import "./App.css";
 import ProductDetails from "../src/components/Product/productDetail";
@@ -10,7 +9,6 @@ import Footer from "./components/Footer/footer";
 import Basket from "./components/Cart/basket";
 import Home from "./components/Home/home";
 import LoginApp from "./components/SignIn/LoginApp"
-import ProductPage from "./components/ProductInformation/productPage"
 import ProductList from "./components/Products/products";
 import WomenProductList from "./components/Products/womenslist";
 import MenProductList from "./components/Products/menProductsList";

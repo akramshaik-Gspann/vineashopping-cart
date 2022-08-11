@@ -160,7 +160,6 @@ export default function Basket(props) {
                       <p><b>Estimated Total</b></p>
                       <p><b>${totalPrice.toFixed(2)}</b></p>
                     </div>
-
                     <NavLink to="/shippingInformation">
                       <button className=" checkbtn">
                         <i className="fa fa-lock"></i>

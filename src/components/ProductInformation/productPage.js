@@ -12,16 +12,16 @@ const ProductPage = () => {
       <>
         <div className="col-md-4 col-xs-6" key={id}>
           <div key={product.id}>
-              <Link to={`/product/${product.id}`}>
-                  <div className="product__card">
-                    <div className="product__image">
-                      <img src={image} alt={title} />
-                    </div>
-                      <h4 className="product__title">{title}</h4>
-                      <div className="product__price">${price}</div>
-                      <Link className="hello" to="#"><img src={heart} alt="heart" /></Link>
+            <Link to={`/product/${product.id}`}>
+              <div className="product__card">
+                <div className="product__image">
+                  <img src={image} alt={title} />
                 </div>
-              </Link>
+                <h4 className="product__title">{title}</h4>
+                <div className="product__price">${price}</div>
+                <Link className="hello" to="#"><img src={heart} alt="heart" /></Link>
+              </div>
+            </Link>
           </div>
         </div>
       </>

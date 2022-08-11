@@ -71,13 +71,10 @@ const ProductDetails = (props) => {
                   <div className="productdetails__right-breadcrumb">
                     <BreadCrumb />
                   </div>
-
                   <h1 className="productdetails__right-title">{title}</h1>
                   <h4 className="productdetails__right-price">
                     ${price}
                   </h4>
-                  {/* <h5 className="productdetails__right-rating">{rating && rating.rate} <i className='fa fa-star'></i> <span>({rating.count})</span>
-                  </h5> */}
                   <h5 className="productdetails__right-rating">
                     <i className='fa fa-star'></i>
                     <i className='fa fa-star'></i>
