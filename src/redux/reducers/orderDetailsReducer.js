@@ -8,11 +8,11 @@ const intialState = {
 export const orderDetailsReducer = (state = intialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_SHIPPING_ADDRESS:
-      return {...state, shippingAddress: payload}
+      return { ...state, shippingAddress: payload }
     case ActionTypes.SET_SHIPPING_METHOD:
-      return {...state, shippingMethod: payload}
+      return { ...state, shippingMethod: payload }
     case ActionTypes.SET_PAYMENT_METHOD:
-      return {...state, paymentInfo: payload}
+      return { ...state, paymentInfo: payload }
     default:
       return state;
   }

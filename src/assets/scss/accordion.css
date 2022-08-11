@@ -11,9 +11,9 @@ h3 {
 }
 
 .button-primary {
-  background-color: #1F39FF;
+  background-color: #1f39ff;
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 25px;
   text-transform: uppercase;
   border-color: transparent;
@@ -24,7 +24,7 @@ h3 {
   position: inherit !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
-  border: 1px solid #D1D3D6;
+  border: 1px solid #d1d3d6;
   color: #172026 !important;
 }
 

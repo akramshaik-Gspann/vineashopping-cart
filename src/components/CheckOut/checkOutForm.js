@@ -9,12 +9,12 @@ function CheckOutForm() {
             <section className="checkOutCart">
                 <h1>Checkout</h1>
                 <div className='container'>
-                        <div class="aem-Grid aem-Grid--12">
-                            < div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12" >
-                                <ShippingInformation />
-                            </div>
+                    <div class="aem-Grid aem-Grid--12">
+                        < div class="aem-GridColumn aem-GridColumn--default--12 aem-GridColumn--phone--12" >
+                            <ShippingInformation />
                         </div>
                     </div>
+                </div>
             </section>
         </div>
     )

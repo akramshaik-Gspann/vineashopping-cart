@@ -58,7 +58,7 @@ function App() {
     <div className="App">
       <Router>
         {/* <Header countCartItems= {cartItems.map((item) => (item.qty ))} /> */}
-        <Header countCartItems= {cartItems.length} />
+        <Header countCartItems={cartItems.length} />
         <Hamburger countCartItems={cartItems.length} />
         <Routes>
           <Route exact path='/' element={<Home />} />
@@ -72,10 +72,10 @@ function App() {
           <Route exact path='/products' element={<ProductList />} />
 
           <Route exact path='/checkoutForm' element={<CheckOutForm cartItems={cartItems} />} />
-          <Route exact path='/shippingInformation' element={<ShippingInformation cartItems={cartItems} onAdd={onAdd} onRemove={onRemove}  />} />
-          <Route exact path='/shippingMethod' element={<ShippingMethod cartItems={cartItems}  onAdd={onAdd} onRemove={onRemove} />} />
-          <Route exact path='/paymentInformation' element={<PaymentInformation cartItems={cartItems}  onAdd={onAdd} onRemove={onRemove}  />} />
-          <Route exact path='/placeOrder' element={<PlaceOrder cartItems={cartItems}  onAdd={onAdd} onRemove={onRemove}/>} />
+          <Route exact path='/shippingInformation' element={<ShippingInformation cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+          <Route exact path='/shippingMethod' element={<ShippingMethod cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+          <Route exact path='/paymentInformation' element={<PaymentInformation cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
+          <Route exact path='/placeOrder' element={<PlaceOrder cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
           <Route exact path='/orderSuccessfull' element={<OrderSuccessfull cartItems={cartItems} />} />
 
           <Route exact path='/product/:productId' element={<ProductDetails onAdd={onAdd} cartItems={cartItems} />} />

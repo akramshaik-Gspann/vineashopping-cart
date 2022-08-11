@@ -11,11 +11,11 @@ export const productsReducer = (state = intialState, { type, payload }) => {
     case ActionTypes.SELECTED_PRODUCT:
       return { ...state, cartProducts: payload };
     case ActionTypes.REMOVE_SELECTED_PRODUCT:
-      return { ...state, cartProducts: {}};
+      return { ...state, cartProducts: {} };
     case ActionTypes.SET_CART_ITEMS:
-      return {...state, cart: [...state.cart, payload]}
+      return { ...state, cart: [...state.cart, payload] }
     case ActionTypes.SET_SHIPPING_ADDRESS:
-      return {...state, shippingAddress: payload}
+      return { ...state, shippingAddress: payload }
     default:
       return state;
   }

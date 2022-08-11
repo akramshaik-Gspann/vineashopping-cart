@@ -31,7 +31,7 @@ function Hamburger(props) {
             </ul>
           </div>
           <div class="menu-items">
-          <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/women">Women</NavLink></li>
             <li><NavLink to="/men" >Men</NavLink></li>
             <li><NavLink to="/smartGear" >Smart Gear</NavLink></li>

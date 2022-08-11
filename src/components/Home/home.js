@@ -44,7 +44,7 @@ function Home() {
                                     <div className='card--one'>
                                         <img src="https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg" />
                                         <div className="shop_Products">
-                                            <NavLink to="/electronics">
+                                            <NavLink to="/jewellery">
                                                 <h5>Jewellery</h5>
                                                 <p>Lorem ipsum dolor sit amet</p>
                                             </NavLink>
@@ -55,7 +55,7 @@ function Home() {
                                     <div className='card--one'>
                                         <img src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg" />
                                         <div className="shop_Products">
-                                            <NavLink to="/jewellery" >
+                                            <NavLink to="/electronics" >
                                                 <h5>Electronics</h5>
                                                 <p>Lorem ipsum dolor sit amet</p>
                                             </NavLink>
@@ -246,7 +246,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {/* Mobile LAnding Page End */}
+            {/* Mobile Landing Page End */}
         </>
 
 

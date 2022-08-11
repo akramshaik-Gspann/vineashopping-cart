@@ -83,8 +83,6 @@ function OrderSuccessfull(props) {
                                                     </div>
                                                 </div>
                                             </div>
-                                            {/* <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12"></div>
-                                                        <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12"></div> */}
                                         </>
                                     ))}</>
 

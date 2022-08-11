@@ -167,11 +167,9 @@ function PaymentInformation(props) {
                                 </div>
                                 <hr />
                                 <div className='button__method'>
-                                    {/* <Link to="/placeOrder"> */}
                                     <button type="submit" class="btn-payment-method">
                                         CONTINUE TO REVIEW ORDER
                                     </button>
-                                    {/* </Link> */}
                                 </div>
                             </form>
                         </div>

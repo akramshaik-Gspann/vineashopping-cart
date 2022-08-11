@@ -86,11 +86,11 @@ function RegisterForm() {
             )}
           </div>
           <div className='button-section'>
-          <input
-            type="submit"
-            className="button-primary"
-            value="Sign In"
-          />
+            <input
+              type="submit"
+              className="button-primary"
+              value="Sign In"
+            />
           </div>
         </form>
       </div>

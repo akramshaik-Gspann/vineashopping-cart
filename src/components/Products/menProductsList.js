@@ -64,7 +64,7 @@ const MenProductList = () => {
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
               <div className="product-filter">
-              <button><FiSliders />Filter Results</button><button><RiArrowUpDownLine /> Sort Products</button>
+                <button><FiSliders />Filter Results</button><button><RiArrowUpDownLine /> Sort Products</button>
               </div>
               <div className="breadcrumbslist__filter">
                 <p>{categoryList.length} Results</p>
@@ -79,7 +79,7 @@ const MenProductList = () => {
         </div>
         <section className="productfilter">
           <div class="aem-Grid aem-Grid--12">
-          <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+            <div className="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
               <Filter />
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
