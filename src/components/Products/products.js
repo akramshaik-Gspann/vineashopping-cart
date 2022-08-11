@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import ProductPage from "../ProductInformation/productPage";
-import women from "../../assets/images/g1.png";
+import women from "../../assets/images/lady_.jpg";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import { FiSliders } from "react-icons/fi";
@@ -36,10 +36,21 @@ const ProductList = () => {
           </div>
           <div class="aem-GridColumn aem-GridColumn--phone--12">
             <div className="productCatalog__title">
-              <h3>Women's Wear</h3>
+              <h3>All Product's</h3>
             </div>
           </div>
         </div>
+
+        <section className="productfilter">
+          <div class="aem-Grid aem-Grid--12">
+            <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
+              <Filter />
+            </div>
+            <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 ">
+              <ProductPage />
+            </div>
+          </div>
+        </section>
       </div>
 
 
@@ -47,7 +58,7 @@ const ProductList = () => {
         <div class="aem-Grid aem-Grid--12">
           <div class="aem-GridColumn aem-GridColumn--default--4">
             <div className="productCatalog__title">
-              <h3>Women's</h3>
+              <h3>All Product's</h3>
             </div>
           </div>
           <div class="aem-GridColumn aem-GridColumn--default--8">
@@ -82,15 +93,6 @@ const ProductList = () => {
           <section className="productfilter">
             <div class="aem-Grid aem-Grid--12">
               <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-                {/* <div className="productfilters">
-                <h4>Filters</h4>
-                <p>Categories</p>
-                <label><input type="checkbox" />Jewellery</label>
-                <label><input type="checkbox" />Electronics</label>
-                <label><input type="checkbox" />Men's Clothing</label>
-                <label><input type="checkbox" />Women's Clothing</label>
-                <hr></hr>
-              </div> */}
                 <Filter />
               </div>
               <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12 ">
