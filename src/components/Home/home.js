@@ -133,7 +133,6 @@ function Home() {
                             <NavLink to="/products">
                                 <button className='landing_button'>SHOP NOW</button>
                             </NavLink>
-
                         </div>
                     </div>
                 </div>

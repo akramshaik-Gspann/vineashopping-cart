@@ -197,7 +197,8 @@ svg {
 .card--one {
     // margin: 5px;
     position: relative;
-    width: 100%;
+    // width: 100%;
+    margin-right: 5px;
     img {
         width: 100%;
         height: 280px;
@@ -208,11 +209,10 @@ svg {
     background-color: $background-color_4;
     color: $color_3;
     border-bottom: 6px solid #e26a2c;
-    position: absolute;
+    position: relative;
     padding: 20px;
-    position: absolute;
-    width: 98%;
-    bottom: 0px;
+    margin-top: -95px;
+    z-index: 5;
 
     p {
         color: $color_3;
@@ -238,7 +238,9 @@ svg {
 .hero__title {
     // padding: 30px 105px;
     position: relative;
-    // padding-left: 80px;
+    
+    padding: 20px 0px 20px 75px;
+
     h1 {
         font-size: 35px;
         margin-bottom: 15px;

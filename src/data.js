@@ -1,7 +1,7 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://st.depositphotos.com/2015659/1932/i/600/depositphotos_19320269-stock-photo-portrait-of-a-handsome-young.jpg",
+      img: "https://i.postimg.cc/sD52cNLP/Hero-image.png",
       title: <h1>Shop the new <br/>Signature Collection</h1>,
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis mattis aliquam faucibus purus.",
     

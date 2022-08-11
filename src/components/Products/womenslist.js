@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import WomenProductPage from "../ProductInformation/womensPage";
-import women from "../../assets/images/g1.png";
+import women from "../../assets/images/Q.png";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import Filter from '../Filter/Filter';

@@ -3,8 +3,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../../data";
-import { mobile } from "../../responsive";
 import { NavLink } from "react-router-dom";
+import '../../assets/scss/slider.css';
 
 const Container = styled.div`
   width: 100%;
@@ -58,6 +58,9 @@ const Image = styled.img`
   @media only screen and (max-width: 1024px) {
     width:511px;
   }
+  @media only screen and (max-width: 1440px) {
+    width:100%;
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -68,7 +71,7 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  margin-top:100px;
+  margin-top:0px;
   color:#172026;
   font: normal normal 600 30px/40px Source Serif Pro;
 `;
@@ -97,6 +100,7 @@ const Button = styled.button`
 
 `;
 
+
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
@@ -115,7 +119,9 @@ const Slider = () => {
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
-            <section class="aem-Grid aem-Grid--12  ">
+            <div class="aem-Grid aem-Grid--12 sliderSize"
+            // style={{marginTop: "139px"}}
+            >
               <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                 <InfoContainer >
                   <Title>{item.title}</Title>
@@ -128,7 +134,7 @@ const Slider = () => {
                   <Image src={item.img} />
                 </ImgContainer>
               </div>
-            </section>
+            </div>
           </Slide>
         ))}
       </Wrapper>

@@ -19,9 +19,13 @@
         }
     }
 }
+.items-inorder{
+    display: flex;
+}
 .items-inorder img {
     width: 80px;
     height: 100px;
+    margin-right: 20px;
     
 }
 .placeOrderTitle {

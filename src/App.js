@@ -25,6 +25,7 @@ import OrderSuccessfull from "./components/CheckOut/orderSuccessfull";
 import Filter from "./components/Filter/Filter";
 
 function App() {
+
   const [cartItems, setCartItems] = useState([]);
   const dispatch = useDispatch();
   const onAdd = (product) => {
@@ -56,7 +57,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header countCartItems={cartItems.length} />
+        {/* <Header countCartItems= {cartItems.map((item) => (item.qty ))} /> */}
+        <Header countCartItems= {cartItems.length} />
         <Hamburger countCartItems={cartItems.length} />
         <Routes>
           <Route exact path='/' element={<Home />} />
