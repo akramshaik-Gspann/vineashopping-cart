@@ -23,6 +23,7 @@ import PaymentInformation from "./components/CheckOut/paymentInformation";
 import PlaceOrder from "./components/CheckOut/placeOrder";
 import OrderSuccessfull from "./components/CheckOut/orderSuccessfull";
 import Filter from "./components/Filter/Filter";
+import { Breadcrumbs } from "@material-ui/core";
 
 function App() {
 
@@ -60,16 +61,17 @@ function App() {
         {/* <Header countCartItems= {cartItems.map((item) => (item.qty ))} /> */}
         <Header countCartItems={cartItems.length} />
         <Hamburger countCartItems={cartItems.length} />
+        <Breadcrumbs  cartItems={cartItems}/>
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route exact path='/login' element={<LoginApp />} />
           <Route exact path="/registerForm" element={<RegisterForm />} />
           <Route exact path='/filter' element={<Filter />} />
-          <Route exact path='/women' element={<WomenProductList />} />
+          <Route exact path='/women' element={<WomenProductList  cartItems={cartItems}/>} />
           <Route exact path='/men' element={<MenProductList />} />
           <Route exact path='/jewellery' element={<SmartGearProductList />} />
           <Route exact path='/electronics' element={<AccessoriesProductList />} />
-          <Route exact path='/products' element={<ProductList />} />
+          <Route exact path='/products' element={<ProductList  cartItems={cartItems} />} />
 
           <Route exact path='/checkoutForm' element={<CheckOutForm cartItems={cartItems} />} />
           <Route exact path='/shippingInformation' element={<ShippingInformation cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
@@ -78,7 +80,7 @@ function App() {
           <Route exact path='/placeOrder' element={<PlaceOrder cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
           <Route exact path='/orderSuccessfull' element={<OrderSuccessfull cartItems={cartItems} />} />
 
-          <Route exact path='/product/:productId' element={<ProductDetails onAdd={onAdd} cartItems={cartItems} />} />
+          <Route exact path='/product/:productId' element={<ProductDetails onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />} />
           <Route exact path='/cart' element={<Basket cartItems={cartItems} onAdd={onAdd} onRemove={onRemove} />} />
           <Route>404 Not Found!</Route>
         </Routes>

@@ -29,7 +29,7 @@ const BreadCrumb = () => {
                     Clothing
                 </Link>
                 <Typography color="textPrimary">
-                    Outwear
+                 Outerwear
                 </Typography>
             </Breadcrumbs>
         </div>

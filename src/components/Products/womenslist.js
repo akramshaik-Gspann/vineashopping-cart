@@ -20,10 +20,6 @@ const WomenProductList = () => {
       });
     dispatch(setProducts(response.data));
   };
-    // Price Low To High
-    // const SortProduct = () => {
-    //     data?.sort((a, b) => (a.price > b.price ? 1 : -1))
-    // }
 
   useEffect(() => {
     fetchProducts();

@@ -83,21 +83,6 @@ const ProductDetails = (props) => {
                   </h5>
                   <p className="productdetails__right-description">{description}</p>
                   <hr />
-                  <h5>Color</h5>
-                  <div className="productdetails__right-colors">
-                    <span><img src={Swatch1} /></span>
-                    <span><img src={Swatch2} /></span>
-                    <span><img src={Swatch3} /></span>
-                    <span><img src={Swatch4} /></span>
-                  </div>
-                  <h5>Size</h5>
-                  <div className="productdetails__right-size">
-                    <button>XS</button>
-                    <button>S</button>
-                    <button>M</button>
-                    <button>L</button>
-                    <button>XL</button>
-                  </div>
                   <h3>Quantity</h3>
                   <div className="input-group w-auto align-items-center">
                     <input
