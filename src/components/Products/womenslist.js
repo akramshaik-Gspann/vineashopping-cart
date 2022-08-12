@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import WomenProductPage from "../ProductInformation/womensPage";
-import women from "../../assets/images/Q.png";
+import women from "../../assets/images/wom_11.png";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import Filter from '../Filter/Filter';
@@ -20,6 +20,10 @@ const WomenProductList = () => {
       });
     dispatch(setProducts(response.data));
   };
+    // Price Low To High
+    // const SortProduct = () => {
+    //     data?.sort((a, b) => (a.price > b.price ? 1 : -1))
+    // }
 
   useEffect(() => {
     fetchProducts();

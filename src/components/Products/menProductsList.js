@@ -3,7 +3,7 @@ import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import MenProductPage from "../ProductInformation/mensPage";
-import men from "../../assets/images/Men_Hero.png";
+import men from "../../assets/images/men_0.png";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 import { FiSliders } from "react-icons/fi";

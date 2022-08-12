@@ -7,7 +7,7 @@ import SmartGearProductPage from "../ProductInformation/smartGearPage";
 import { FiSliders } from "react-icons/fi";
 import { RiArrowUpDownLine } from "react-icons/ri";
 import Filter from '../Filter/Filter';
-import smartGear from "../../assets/images/smartGear.jpg";
+import smartGear from "../../assets/images/wom_1.png";
 import BreadCrumb from '../BreadCrumb/breadCrumb';
 import '../../assets/scss/productList.css';
 // import Pagination from "../Pagination/pagination";
@@ -48,7 +48,7 @@ const SmartGearProductList = () => {
         <div class="aem-Grid aem-Grid--12">
           <div class="aem-GridColumn aem-GridColumn--default--4">
             <div className="productCatalog__title">
-              <h3>Smart Gear</h3>
+              <h3>Jewellery</h3>
             </div>
           </div>
           <div class="aem-GridColumn aem-GridColumn--default--8">
