@@ -28,7 +28,7 @@ const MenProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "men's clothing");
-  const {  category } = categoryList;
+  const { category } = categoryList;
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">
@@ -68,6 +68,10 @@ const MenProductList = () => {
                 <Link
                   color="inherit"
                   href="/"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    alert("Home Page Clicked");
+                  }}
                 >
                   Home
                 </Link>
@@ -79,7 +83,7 @@ const MenProductList = () => {
                     alert("Men’s Clothing Clicked");
                   }}
                 >
-                 {categoryList[0].category}
+                  {categoryList[0].category}
                 </Link>
                 <Typography color="textPrimary">
                   Outerwear

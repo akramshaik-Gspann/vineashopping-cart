@@ -31,7 +31,7 @@ const SmartGearProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "jewelery");
-  const {  category } = categoryList;
+  const { category } = categoryList;
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">
@@ -72,6 +72,10 @@ const SmartGearProductList = () => {
                   <Link
                     color="inherit"
                     href="/"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      alert("Home Page Clicked");
+                    }}
                   >
                     Home
                   </Link>
@@ -83,7 +87,7 @@ const SmartGearProductList = () => {
                       alert("Jewellery Page Clicked");
                     }}
                   >
-                      {categoryList[0].category}
+                    {categoryList[0].category}
                   </Link>
                   <Typography color="textPrimary">
                     Outerwear

@@ -28,7 +28,7 @@ const AccessoriesProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "electronics");
-  const {  category } = categoryList;
+  const { category } = categoryList;
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">
@@ -64,11 +64,15 @@ const AccessoriesProductList = () => {
         <div className="breadcrumbslist">
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-            <div className="breadcrumbs">
+              <div className="breadcrumbs">
                 <Breadcrumbs aria-label="breadcrumb">
                   <Link
                     color="inherit"
                     href="/"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      alert("Home Page Clicked");
+                    }}
                   >
                     Home
                   </Link>
@@ -77,13 +81,13 @@ const AccessoriesProductList = () => {
                     href="/getting-started/installation/"
                     onClick={(event) => {
                       event.preventDefault();
-                      alert("Dashboard Clicked");
+                      alert("Accessories Page Clicked");
                     }}
                   >
-                     {categoryList[0].category}
+                    {categoryList[0].category}
                   </Link>
                   <Typography color="textPrimary">
-                  Accessories
+                    Accessories
                   </Typography>
                 </Breadcrumbs>
               </div>
