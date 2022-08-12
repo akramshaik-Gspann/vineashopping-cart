@@ -5,12 +5,16 @@ import {
   removeSelectedProduct,
 } from "../../redux/actions/productsActions";
 import BreadCrumb from "../BreadCrumb/breadCrumb";
+import Link from "@material-ui/core/Link";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import '../../assets/scss/productDetail.css';
 import Swatch1 from '../../assets/images/Swatch 01.png';
 import Swatch2 from '../../assets/images/Swatch 02.png';
 import Swatch3 from '../../assets/images/Swatch 03.png';
 import Swatch4 from '../../assets/images/Swatch 04.png';
 import heart from '../../assets/images/heart.png';
+
 
 
 
@@ -69,7 +73,29 @@ const ProductDetails = (props) => {
               <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12">
                 <div className="productdetails__right">
                   <div className="productdetails__right-breadcrumb">
-                    <BreadCrumb />
+                    <div className="breadcrumbs">
+                      <Breadcrumbs aria-label="breadcrumb">
+                        <Link
+                          color="inherit"
+                          href="/"
+                        >
+                          Home
+                        </Link>
+                        <Link
+                          color="inherit"
+                          href="/getting-started/installation/"
+                          onClick={(event) => {
+                            event.preventDefault();
+                            alert("Jewellery Page Clicked");
+                          }}
+                        >
+                          {product.category}
+                        </Link>
+                        <Typography color="textPrimary">
+                          Outerwear
+                        </Typography>
+                      </Breadcrumbs>
+                    </div>
                   </div>
                   <h1 className="productdetails__right-title">{title}</h1>
                   <h4 className="productdetails__right-price">
@@ -81,7 +107,7 @@ const ProductDetails = (props) => {
                     <i className='fa fa-star'></i>
                     <i className='fa fa-star'></i><span>({rating.count})</span>
                   </h5>
-                  <p className="productdetails__right-description">{description}</p>
+                  <p className="productdetails__right-description">{description}&nbsp;<span>Read More</span></p>
                   <hr />
                   <h3>Quantity</h3>
                   <div className="input-group w-auto align-items-center">

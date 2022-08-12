@@ -19,7 +19,8 @@
 .productCatalog__title {
   background-color: #1b252c;
   position: relative;
-  padding: 122px 0;
+  padding: 140px 0;
+  height: 380px;
 }
 
 .productCatalog__title h3 {
@@ -41,12 +42,25 @@
 
 .productCatalog__image {
   padding: 41px 0px 0px 0px;
+  overflow: hidden;
+  height: 375px;
 }
 
 .productCatalog__image img {
   width: 100%;
-  height: 232px;
   margin-top: 10px;
+}
+
+.product-filter {
+  display: none;
+}
+
+.filter h6 {
+  font-size: 18px;
+}
+
+.attribute h6 {
+  font-size: 18px;
 }
 
 .breadcrumbslist {
@@ -71,6 +85,11 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.breadcrumbslist__filter p {
+  margin-left: 60px;
+  font-size: 15px;
 }
 
 .productfilter {
@@ -177,6 +196,7 @@
   }
   .breadcrumbslist__filter p {
     font-size: 16px;
+    margin-left: 0px;
   }
   .productfilters {
     display: none;
@@ -194,10 +214,8 @@
     margin-top: 0px !important;
   }
   .productCatalog__image {
-    padding: 0px;
-  }
-  .productCatalog__image img {
-    height: auto !important;
+    height: 217px;
+    margin-top: -51px;
   }
   .productCatalog__title {
     width: 90%;
@@ -266,10 +284,7 @@
     margin-top: 0px !important;
   }
   .productCatalog__image {
-    padding: 0px;
-  }
-  .productCatalog__image img {
-    height: auto !important;
+    margin-top: -51px;
   }
   .productCatalog__title {
     width: 90%;
@@ -306,9 +321,20 @@
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1800px) {
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
   .product-filter {
     display: none;
+  }
+  .productCatalog__title {
+    background-color: #1b252c;
+    position: relative;
+    padding: 100px 0;
+    height: 303px;
+  }
+  .productCatalog__image {
+    padding: 42px 0px 0px 0px;
+    overflow: hidden;
+    height: 303px;
   }
 }
 
@@ -321,11 +347,16 @@
   }
   .productCatalog__image img {
     width: 100%;
-    height: 272px;
     margin-top: 10px;
   }
   .productCatalog-desktop {
     margin-top: -20px;
+  }
+  .productCatalog__title {
+    background-color: #1b252c;
+    position: relative;
+    padding: 122px 0;
+    height: 360px;
   }
 }
 /*# sourceMappingURL=productList.css.map */

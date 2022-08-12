@@ -34,7 +34,9 @@ $border-color_1: transparent;
 	background-color: $background-color_2;
 	// height: 340px;
 	position: relative;
-	padding: 122px 0;
+	padding: 140px 0;
+	height: 380px;
+
 	h3 {
 		color: $color_1;
 		text-align: center;
@@ -54,10 +56,25 @@ $border-color_1: transparent;
 
 .productCatalog__image {
 	padding: 41px 0px 0px 0px;
+	overflow: hidden;
+	height: 375px;
 	img {
 		width: 100%;
-		height: 232px;
+		// height: 232px;
 		margin-top: 10px;
+	}
+}
+.product-filter {
+	display: none;
+}
+.filter {
+	h6 {
+		font-size: 18px;
+	}
+}
+.attribute {
+	h6 {
+		font-size: 18px;
 	}
 }
 .breadcrumbslist {
@@ -80,6 +97,10 @@ $border-color_1: transparent;
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	p {
+		margin-left: 60px;
+		font-size: 15px;
+	}
 }
 .productfilter {
 	padding-top: 20px;
@@ -150,7 +171,7 @@ $border-color_1: transparent;
 		}
 	}
 }
-.product-filter svg{
+.product-filter svg {
 	color: #172026;
 }
 
@@ -167,6 +188,7 @@ $border-color_1: transparent;
 		margin: 20px 0;
 		p {
 			font-size: 16px;
+			margin-left: 0px;
 		}
 	}
 	.productfilters {
@@ -187,10 +209,8 @@ $border-color_1: transparent;
 		margin-top: 0px !important;
 	}
 	.productCatalog__image {
-		padding: 0px;
-		img {
-			height: auto !important;
-		}
+		height: 217px;
+		margin-top: -51px;
 	}
 	.productCatalog__title {
 		width: 90%;
@@ -255,11 +275,9 @@ $border-color_1: transparent;
 	.productCatalog {
 		margin-top: 0px !important;
 	}
+
 	.productCatalog__image {
-		padding: 0px;
-		img {
-			height: auto !important;
-		}
+		margin-top: -51px;
 	}
 	.productCatalog__title {
 		width: 90%;
@@ -293,26 +311,42 @@ $border-color_1: transparent;
 	}
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1800px) {
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
 	.product-filter {
 		display: none;
 	}
+	.productCatalog__title {
+		background-color: #1b252c;
+		position: relative;
+		padding: 100px 0;
+		height: 303px;
+	}
+	.productCatalog__image {
+		padding: 42px 0px 0px 0px;
+		overflow: hidden;
+		height: 303px;
+	}
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 3000px){
-	.productCatalog{
-		margin:20px 0px;
+@media only screen and (min-width: 1440px) and (max-width: 3000px) {
+	.productCatalog {
+		margin: 20px 0px;
 	}
 	.productCatalog__image {
 		padding: 0px;
 		img {
 			width: 100%;
-			height: 272px;
+			// height: 272px;
 			margin-top: 10px;
 		}
 	}
-	.productCatalog-desktop{
+	.productCatalog-desktop {
 		margin-top: -20px;
 	}
+	.productCatalog__title {
+		background-color: #1b252c;
+		position: relative;
+		padding: 122px 0;
+		height: 360px;
+	}
 }
-

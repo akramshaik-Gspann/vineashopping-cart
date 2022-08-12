@@ -8,7 +8,11 @@ import { FiSliders } from "react-icons/fi";
 import { RiArrowUpDownLine } from "react-icons/ri";
 import Filter from '../Filter/Filter';
 import smartGear from "../../assets/images/wom_1.png";
-import BreadCrumb from '../BreadCrumb/breadCrumb';
+// import BreadCrumb from '../BreadCrumb/breadCrumb';
+import Link from "@material-ui/core/Link";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import '../../assets/scss/breadCrumb.css';
 import '../../assets/scss/productList.css';
 // import Pagination from "../Pagination/pagination";
 
@@ -27,6 +31,7 @@ const SmartGearProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "jewelery");
+  const {  category } = categoryList;
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">
@@ -62,7 +67,29 @@ const SmartGearProductList = () => {
         <div className="breadcrumbslist">
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-              <BreadCrumb />
+              <div className="breadcrumbs">
+                <Breadcrumbs aria-label="breadcrumb">
+                  <Link
+                    color="inherit"
+                    href="/"
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    color="inherit"
+                    href="/getting-started/installation/"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      alert("Jewellery Page Clicked");
+                    }}
+                  >
+                      {categoryList[0].category}
+                  </Link>
+                  <Typography color="textPrimary">
+                    Outerwear
+                  </Typography>
+                </Breadcrumbs>
+              </div>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
               <div className="product-filter">

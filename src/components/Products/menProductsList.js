@@ -4,7 +4,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { setProducts } from "../../redux/actions/productsActions";
 import MenProductPage from "../ProductInformation/mensPage";
 import men from "../../assets/images/men_0.png";
-import BreadCrumb from '../BreadCrumb/breadCrumb';
+import Link from "@material-ui/core/Link";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import '../../assets/scss/breadCrumb.css';
 import '../../assets/scss/productList.css';
 import { FiSliders } from "react-icons/fi";
 import { RiArrowUpDownLine } from "react-icons/ri";
@@ -25,6 +28,7 @@ const MenProductList = () => {
     fetchProducts();
   }, []);
   const categoryList = products.filter((value) => value.category === "men's clothing");
+  const {  category } = categoryList;
   return (
     <div className="productCatalog">
       <div className="productCatalog-mobile">
@@ -36,7 +40,7 @@ const MenProductList = () => {
           </div>
           <div class="aem-GridColumn aem-GridColumn--phone--12">
             <div className="productCatalog__title">
-              <h3>Mens <br />Outerwear</h3>
+              <h3>Men's <br />Outerwear</h3>
             </div>
           </div>
         </div>
@@ -46,7 +50,7 @@ const MenProductList = () => {
         <div class="aem-Grid aem-Grid--12">
           <div class="aem-GridColumn aem-GridColumn--default--4">
             <div className="productCatalog__title">
-              <h3>Men's</h3>
+              <h3>Men's <br />Outerwear</h3>
             </div>
           </div>
           <div class="aem-GridColumn aem-GridColumn--default--8">
@@ -60,7 +64,27 @@ const MenProductList = () => {
         <div className="breadcrumbslist">
           <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--12">
-              <BreadCrumb />
+              <Breadcrumbs aria-label="breadcrumb">
+                <Link
+                  color="inherit"
+                  href="/"
+                >
+                  Home
+                </Link>
+                <Link
+                  color="inherit"
+                  href="/getting-started/installation/"
+                  onClick={(event) => {
+                    event.preventDefault();
+                    alert("Men’s Clothing Clicked");
+                  }}
+                >
+                 {categoryList[0].category}
+                </Link>
+                <Typography color="textPrimary">
+                  Outerwear
+                </Typography>
+              </Breadcrumbs>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--9 aem-GridColumn--phone--12">
               <div className="product-filter">
